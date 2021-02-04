@@ -15,9 +15,9 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (n < 0)
 printf("%lu. is negative\n", sizeof(n));
-else (n == 0)
+else if (n == 0)
 printf("%lu. is zero\n", sizeof(n));
-else (n > 0)
+else if (n > 0)
 printf("%lu. is positive \n", sizeof(n));
 return (0);
 }
