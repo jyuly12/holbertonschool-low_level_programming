@@ -1,17 +1,16 @@
-#include <stdio.h>
-
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
+#include <stdio.h>
 int main(void)
 {
-int c;
-for (c = '0'; c <= '9'; c++)
+int i;
+for (i = 48; i <= 57; i++)
 {
-putchar(c);  
-if (c < '9')
+putchar(i);
+if (i < 57)
 {
 putchar(',');
 putchar(' ');
