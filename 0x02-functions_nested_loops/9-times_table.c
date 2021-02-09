@@ -1,17 +1,34 @@
 #include "holberton.h"
+/**
+ * times_table - Prints the table.
+ *
+ */
 void times_table(void)
 {
-int m, r, f;
-for (m = 48; m <= 57; m++)
+int i, j, k, c, s;
+for (i = 0; i <= 9; i++)
 {
-for (r = 48; r <= 57; r++)
+for (j = 0; j <= 9; j++)
 {
-f = r*m;
-_putchar(f);
-if (r <= 57 && m <= 57)
+k = i * j;
+c = k / 10;
+s = k % 10;
+if (k < 10)
+{
+if (j != 0)
 {
 _putchar(',');
 _putchar(' ');
+_putchar(' ');
+}
+_putchar(s + '0');
+}
+else
+{
+_putchar(',');
+_putchar(' ');
+_putchar(c + '0');
+_putchar(s + '0');
 }
 }
 _putchar('\n');
