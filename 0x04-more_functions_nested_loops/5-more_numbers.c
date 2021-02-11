@@ -12,10 +12,8 @@ for (count = 0; count <= 10; count++)
 for (numb = 0; numb <= 14; numb++)
 {
 if (numb > 9)
-
 _putchar((numb / 10) + '0');
 _putchar((numb % 10) + '0');
-
 }
 _putchar('\n');
 }
