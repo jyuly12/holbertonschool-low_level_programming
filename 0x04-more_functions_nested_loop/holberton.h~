@@ -1,0 +1,12 @@
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
+
+/*
+ * File: holberton.h
+ * Auth: Julieth Gonzalez
+ * Desc: Header file contaning declarations for all functions
+ *       used in the 0x04-more_functions_nested_loops.
+ */
+int _isupper(int c);
+
+#endif
