@@ -19,7 +19,14 @@ printf("Fizz ");
 }
 else if (num % 5 == 0)
 {
+if (num <= 99)
+{
 printf("Buzz ");
+}
+else
+{
+printf("Buzz");
+}
 }
 else
 {
