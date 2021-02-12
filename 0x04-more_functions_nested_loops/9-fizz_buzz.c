@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ * main - Print Fizz Buzz.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 int num;
@@ -14,13 +19,13 @@ printf("Fizz ");
 }
 else if (num % 5 == 0)
 {
-printf("Buzz "); 
+printf("Buzz ");
 }
-else 
+else
 {
 printf("%d ", num);
 }
 }
-printf("\n"); 
+printf("\n");
 return (0);
 }
