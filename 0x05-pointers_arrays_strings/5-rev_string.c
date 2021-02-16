@@ -5,18 +5,18 @@
  * @s: point.
  *
  */
-
 void rev_string(char *s)
 {
-int i, c;
-char h;
+int a, b, c;
+char var;
 
-for (i = 0; s[i] != '\0'; i++)
+for (a = 0; s[a] != '\0'; a++)
 ;
-for (i--, c = 0; c < i / 2; i--, c++)
+c = a;
+for (a--, b = 0; b < c / 2; a--, b++)
 {
-h = s[c];
-s[c] = s[i];
-s[i] = h;
+var = s[b];
+s[b] = s[a];
+s[a] = var;
 }
 }
