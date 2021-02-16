@@ -10,8 +10,8 @@ int j;
 while (s[j] != '\0')
 {
 j++;
-j = j - 1;
 }
+j = j - 1;
 while (j >= 0)
 {
 _putchar(s[j]);
