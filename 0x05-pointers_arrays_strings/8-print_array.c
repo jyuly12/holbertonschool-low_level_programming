@@ -12,11 +12,11 @@ int i;
 while (i < n)
 {
 printf("%d", a[i]);
-i++;
-if (i < n)
+if (i < n - 1)
 {
 printf(", ");
 }
+i++;
 }
 printf("\n");
 }
