@@ -1,7 +1,9 @@
 #include "holberton.h"
 /**
  * _atoi - Convert a string to an integer.
- * @s:  
+ * @s: string character.
+ *
+ * Return: Always h.
  */
 int _atoi(char *s)
 {
@@ -27,7 +29,7 @@ h = (s[m] - '0') * -1;
 }
 if (s[m + 1] < 48 || s[m + 1] > 57)
 {
-break; 
+break;
 }
 }
 if (i < 0)
