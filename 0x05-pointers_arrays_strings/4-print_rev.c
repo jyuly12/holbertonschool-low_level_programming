@@ -7,9 +7,9 @@
 void print_rev(char *s)
 {
 int j;
-while (s[j] != '\0')
+for (j = 0; s[j] != '\0'; j++)
 {
-j++;
+;
 }
 while (j >= 0)
 {
