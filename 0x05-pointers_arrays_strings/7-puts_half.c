@@ -16,14 +16,12 @@ j = i / 2;
 }
 else
 {
-j = (i - 1) / 2;
-j = j + 1;
+j = (i + 1) / 2;
 }
-i = i - 1;
-while (j <= i)
+
+ for (i--; j <= i; j++)
 {
 _putchar(str[j]);
-j++;
 }
 _putchar('\n');
 }
