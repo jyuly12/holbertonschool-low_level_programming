@@ -18,8 +18,7 @@ else
 {
 j = (i + 1) / 2;
 }
-
- for (i--; j <= i; j++)
+for (i--; j <= i; j++)
 {
 _putchar(str[j]);
 }
