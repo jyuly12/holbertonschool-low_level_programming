@@ -2,7 +2,7 @@
 /**
  * rev_string - Reverses a string.
  *
- * @s: point.
+ * @s: point parameter.
  *
  */
 void rev_string(char *s)
