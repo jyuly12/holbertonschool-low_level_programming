@@ -1,8 +1,9 @@
-B#include "holberton.h"
+#include "holberton.h"
 
 /**
- * 
- * @n: input value.
+ * _strcat - Concatenates two strings. 
+ * @dest: string value.
+ * @src: string value.
  *
  */
 char *_strcat(char *dest, char *src)
