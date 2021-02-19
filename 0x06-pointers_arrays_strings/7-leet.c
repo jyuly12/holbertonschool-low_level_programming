@@ -36,5 +36,6 @@ str[i] = 49;
 }
 i++;
 }
+str[i] = '\0';
 return (str);
 }
