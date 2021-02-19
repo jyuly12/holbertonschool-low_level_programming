@@ -10,19 +10,18 @@
 
 char *leet(char *str)
 {
-int i = 0, j = 0;
-char letter[] = {AaEeOoTtLl}
-char numbers[] = {4433007711}
+int i = 0, j;
+char letter[] = "AaEeOoTtLl";
+char numbers[] = "4433007711";
 
 while (str[i] != '\0')
 {
-while (j <= 4)
+for (j = 0; j <= 9; j++)
 {
 if (str[i] == letter[j])
 {
 str[i] = numbers[j];
 }
-j++;
 }
 i++;
 }
