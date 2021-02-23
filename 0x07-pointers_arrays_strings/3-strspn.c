@@ -8,8 +8,9 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-int i = 0, j, k;
-while (s[i] != ' ')
+int i, j;
+unsigned int k;
+for (i = 0; s[i] != ' '; i++)
 {
 for (j = 0; accept[j] != '\0'; j++)
 {
@@ -19,7 +20,6 @@ k++;
 break;
 }
 }
-i++;
 }
 return (k);
 }
