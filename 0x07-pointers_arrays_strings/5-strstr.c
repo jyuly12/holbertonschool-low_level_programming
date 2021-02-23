@@ -22,6 +22,10 @@ else if (needle[j] == haystack[i])
 {
 return (haystack + i);
 }
+else if (needle[j] == '\0')
+{
+return (haystack + i);
+}
 }
 if (needle[0] == '\0')
 {
@@ -29,5 +33,5 @@ return (haystack);
 }
 i++;
 }
-return (0);
+return ('\0');
 }
