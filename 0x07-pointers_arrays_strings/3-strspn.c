@@ -20,7 +20,7 @@ if (s[j] == accept[i])
 k++;
 break;
 }
-if (accept[i + i] == '\0')
+if (accept[j + 1] == '\0')
 {
 k++;
 }
