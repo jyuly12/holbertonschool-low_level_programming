@@ -21,7 +21,7 @@ else
 ch = malloc(size * sizeof(c));
 }
 i = 0;
-while(i < size)
+while (i < size)
 {
 ch[i] = c;
 i++;
