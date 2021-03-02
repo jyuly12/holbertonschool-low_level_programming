@@ -14,7 +14,7 @@ char *ch;
 unsigned int i;
 if (size == 0)
 {
-return ('\0');
+return (NULL);
 }
 else
 {
