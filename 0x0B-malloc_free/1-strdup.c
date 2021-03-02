@@ -34,6 +34,6 @@ while (j < i)
 dupl[j] = str[j];
 j++;
 }
-dupl = NULL;
+dupl[j] = '\0';
 return (dupl);
 }
