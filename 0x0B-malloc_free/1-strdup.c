@@ -27,12 +27,13 @@ if (dupl == NULL)
 {
 return (NULL);
 }
+
 j = 0;
 while (j < i)
 {
 dupl[j] = str[j];
 j++;
 }
-
+dupl = NULL;
 return (dupl);
 }
