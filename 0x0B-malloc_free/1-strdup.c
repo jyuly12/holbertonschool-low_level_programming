@@ -15,8 +15,7 @@ if (str == NULL)
 {
 return (NULL);
 }
-else
-{
+
 i = 0;
 while (i <= *str)
 {
@@ -30,6 +29,10 @@ while (j < i)
 dupl[j] = str[j];
 j++;
 }
-return (dupl);
+if (dupl == NULL)
+{
+return (NULL);
 }
+return (dupl);
+
 }
