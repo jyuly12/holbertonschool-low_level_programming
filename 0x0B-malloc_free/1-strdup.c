@@ -23,16 +23,16 @@ i++;
 }
 
 dupl = malloc(sizeof(char) * (i + 1));
+if (dupl == NULL)
+{
+return (NULL);
+}
 j = 0;
 while (j < i)
 {
 dupl[j] = str[j];
 j++;
 }
-if (dupl == NULL)
-{
-return (NULL);
-}
-return (dupl);
 
+return (dupl);
 }
