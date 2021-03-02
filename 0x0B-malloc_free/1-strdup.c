@@ -8,8 +8,8 @@
  */
 char *_strdup(char *str)
 {
-  char *dupl;
-  int i, j;
+char *dupl;
+int i, j;
 
 if (str == NULL)
 {
@@ -29,7 +29,7 @@ while (j < i)
 {
 dupl[j] = str[j];
 j++;
-} 
+}
 return (dupl);
 }
 }
