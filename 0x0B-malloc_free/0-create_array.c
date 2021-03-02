@@ -20,11 +20,9 @@ else
 {
 ch = malloc(size * sizeof(c));
 }
-i = 0;
-while (i < size)
+for (i = 0; i < size; i++)
 {
 ch[i] = c;
-i++;
 }
 return (ch);
 }
