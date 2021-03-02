@@ -16,13 +16,9 @@ if (size == 0)
 {
 return ('\0');
 }
-else if (c == '\0')
-{
-return ('\0');
-}
 else
 {
-ch = malloc(size * sizeof(c));
+ch = malloc(size * sizeof(char));
 }
 i = 0;
 while (i < size)
