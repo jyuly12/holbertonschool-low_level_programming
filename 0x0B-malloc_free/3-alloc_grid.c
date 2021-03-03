@@ -18,13 +18,14 @@ return (NULL);
 grid = malloc(sizeof(int) * height);
 if (grid == NULL)
 {
+free(grid);
 return (NULL);
 }
 i = 0;
 while (i < height)
 {
 grid[i] = malloc(sizeof(int) * width);
-if (grid[i] == '\0')
+if (grid[i] == NULL)
 {
 j = 0;
 while (j <= i)
