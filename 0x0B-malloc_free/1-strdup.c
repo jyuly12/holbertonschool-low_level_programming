@@ -17,7 +17,7 @@ return (NULL);
 }
 
 i = 1;
-while (i <= *str)
+while (str[i] != '\0')
 {
 i++;
 }
