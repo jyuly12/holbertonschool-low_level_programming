@@ -23,7 +23,7 @@ return (NULL);
 }
 
 i = 0;
-while (i <= max)
+while (min <= max)
 {
 arr[i] = min;
 i++;
