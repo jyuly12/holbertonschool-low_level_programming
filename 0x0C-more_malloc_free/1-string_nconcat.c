@@ -26,10 +26,10 @@ j = 0;
 while (s2[j] != '\0' && j <= n)
 j++;
 
-if (j < n)
-value = malloc(sizeof(char) * (i + j + 1));
-else
+if (j <= n)
+n = j;
 value = malloc(sizeof(char) * (i + n + 1));
+
 if (value == NULL)
 return (NULL);
 
