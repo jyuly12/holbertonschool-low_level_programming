@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
-
+#include <stdlib.h>
 /**
  * print_all - prints anything.
  * @format: list of types of arguments.
@@ -14,7 +14,7 @@ char *ch;
 va_list ap;
 
 va_start(ap, format);
-while (format[k] != '\0' && (format))
+while (format[k] && format != NULL)
 {
 switch (format[k])
 {
