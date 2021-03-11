@@ -41,7 +41,9 @@ k++;
 continue;
 }
 if (format[k + 1] != '\0')
+{
 printf(", ");
+}
 k++;
 }
 printf("\n");
