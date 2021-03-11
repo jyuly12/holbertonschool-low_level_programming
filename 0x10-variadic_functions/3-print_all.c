@@ -31,10 +31,10 @@ case 'i':
 printf("%d", va_arg(ap, int));
 break;
 case 'f':
-printf("%f", (float) va_arg(ap, double));
+printf("%f", va_arg(ap, double));
 break;
 case 'c':
-printf("%c", (char) va_arg(ap, int));
+printf("%c", va_arg(ap, int));
 break;
 default:
 k++;
