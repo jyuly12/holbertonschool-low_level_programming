@@ -2,13 +2,13 @@ section .text
 	global main
 
 main:
-	mov rax, 1
+	mov rax, 4
 	mov rdi, 1
 	mov rsi, msg
 	mov rdx, msglen
 	syscall
 
-	mov rax, 60
+	mov rax, 1
 	mov rdi, 0
 	syscall
 
