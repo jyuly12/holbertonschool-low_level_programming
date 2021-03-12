@@ -37,11 +37,11 @@ printf("%s", ch);
 break;
 default:
 j = 0;
-break;
 }
-if (format[k + 1] != '\0' && j)
+if (format[k + 1] != '\0' && j == 1)
+{
 printf(", ");
-
+}
 k++;
 }
 va_end(ap);
