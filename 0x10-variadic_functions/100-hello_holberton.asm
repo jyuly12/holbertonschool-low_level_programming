@@ -1,8 +1,8 @@
-section .text
+Bsection .text
 	global main
 
 main:
-	mov rax, 4
+	mov rax, 1
 	mov rdi, 1
 	mov rsi, msg
 	mov rdx, msglen
