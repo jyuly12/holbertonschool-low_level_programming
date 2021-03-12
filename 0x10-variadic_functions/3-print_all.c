@@ -11,11 +11,12 @@ void print_all(const char *const format, ...)
 unsigned int k;
 char *ch;
 va_list ap;
-va_start(ap, format);
 
+va_start(ap, format);
 k = 0;
 while (format[k] && format != NULL)
 {
+ch = va_arg(ap, char *);
 switch (format[k])
 {
 case 'i':
@@ -28,11 +29,11 @@ case 'c':
 printf("%c", va_arg(ap, int));
 break;
 case 's':
-ch = va_arg(ap, char *);
 if (ch == NULL)
+{
 printf("(nil)");
 break;
-else
+}
 printf("%s", ch);
 break;
 default:
