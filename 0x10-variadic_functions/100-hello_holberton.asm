@@ -1,4 +1,4 @@
-Bsection .text
+section .text
 	global main
 
 main:
@@ -13,5 +13,5 @@ main:
 	syscall
 
 	section .rodata
-msg:	 db "Hello, Holberton", 10
-msglen:	 equ $ - msg
+msg:	db "Hello, Holberton", 10
+msglen: equ $ - msg
