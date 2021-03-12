@@ -14,6 +14,7 @@ char *ch;
 va_list ap;
 
 va_start(ap, format);
+k = 0;
 while (format[k] && format != NULL)
 {
 switch (format[k])
