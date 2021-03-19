@@ -1,9 +1,10 @@
-SECTION .data
+	SECTION .data
 
-	fmt db "%s", 10, 0
-	msg db "Hello, Holberton",0
+fmt:	db "%s", 10, 0
+msg:	db "Hello, Holberton",0
 
-SECTION .text
+	SECTION .text
+
 	extern printf
 	global main
 
@@ -14,5 +15,3 @@ main:
 	call printf
 
 	mov ebx, 0
-	mov eax, 1
-	int 0x80
