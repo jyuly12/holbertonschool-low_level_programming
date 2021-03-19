@@ -1,4 +1,4 @@
-#include "lists.h"
+B#include "lists.h"
 /**
  * print_list - prints all the elements of a list_t list.
  * @h: list_t structure.
@@ -8,6 +8,9 @@
 size_t print_list(const list_t *h)
 {
 int i = 0;
+
+	if (h == NULL)
+		return (0);
 
 	while (h != NULL)
 	{
@@ -21,4 +24,5 @@ int i = 0;
 		h = h->next;
 	}
 	return (i);
+
 }
