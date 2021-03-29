@@ -1,6 +1,11 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdlib.h>
+#include <stdio.h>
+
 /*
  * File: holberton.h
  * Auth: Julieth Gonzalez.
