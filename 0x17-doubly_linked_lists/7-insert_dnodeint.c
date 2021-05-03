@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * insert_dnodeint_at_index - inserts a new node at a given position.
  * @h: listint_t linked list.
@@ -8,11 +7,10 @@
  *
  * Return: new_node.
  */
-
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	unsigned int i = 0;
-	dlistint_t *new_node, *tmp, *node;
+	dlistint_t *new_node, *tmp;
 
 	tmp = *h;
 	if (!h)
@@ -21,37 +19,41 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (!new_node)
 		return (NULL);
 	new_node->n = n;
-
-	if (*h == NULL && idx == 0)
+	if (idx == 0 && *h == NULL)
 	{
 		*h = new_node;
 		new_node->next->prev = NULL;
-		return (new_node);
+		return(new_node);
 	}
-
 	if (idx == 0)
 	{
-		tmp->prev = new_node;
-		new_node->prev = NULL;
-		new_node->next = tmp;
 		*h = new_node;
+		new_node->prev = NULL;
+		new_node->next = *h;
+		(*h)->prev = new_node;
 		return (new_node);
 	}
-	for (; tmp; i++)
+	while (tmp != NULL)
 	{
 		if (i == idx - 1)
 		{
-			node = tmp->next;
-			tmp->next = new_node;
-			new_node->next = node;
-
-			if (!node)
-				node->prev = new_node;
-
-			new_node->prev = tmp;
+			if (!(tmp->next))
+			{
+				new_node->next = NULL;
+				new_node->prev = tmp;
+				tmp->next = new_node;
+			}
+			else
+			{
+				new_node->next = tmp->next;
+				new_node->prev = tmp;
+				tmp->next = new_node;
+				new_node->next->prev = new_node;
+			}
 			return (new_node);
 		}
 		tmp = tmp->next;
+		i++;
 	}
 	return (NULL);
 }
