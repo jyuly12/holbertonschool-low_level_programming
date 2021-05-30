@@ -9,20 +9,20 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-        hash_node_t *tmp;
-        unsigned int index;
+	hash_node_t *tmp;
+	unsigned int index;
 
-        if (ht == NULL || key == NULL || key[0] == '\0')
-                return (NULL);
+	if (ht == NULL || key == NULL || key[0] == '\0')
+		return (NULL);
 
-        index = key_index((const unsigned char *)key, ht->size);
+	index = key_index((const unsigned char *)key, ht->size);
 
-        tmp = ht->array[index];
-        while (tmp != NULL)
-        {
-                if (strcmp(tmp->key, key) == 0)
-                        return (tmp->value);
-                tmp = tmp->next;
-        }
-        return (NULL);
+	tmp = ht->array[index];
+	while (tmp != NULL)
+	{
+		if (strcmp(tmp->key, key) == 0)
+			return (tmp->value);
+		tmp = tmp->next;
+	}
+	return (NULL);
 }
