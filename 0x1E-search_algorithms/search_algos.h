@@ -4,6 +4,7 @@
 /** libraries used **/
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 /** Prototipes **/
 int linear_search(int *array, size_t size, int value);
